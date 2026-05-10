@@ -13,7 +13,8 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # --- ТОКЕН ---
-BOT_TOKEN = "8190242720:AAEVGoZj6sG12S-ciV1YilJ80SydaUeumnM"
+import os
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 # --- СОСТОЯНИЯ ---
 MAIN_MENU, EVENING_REPORT, SET_GOAL, CHECK_GOAL = range(4)
